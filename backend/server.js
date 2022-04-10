@@ -2,8 +2,8 @@ const express = require('express');
 const app = express();
 const cors = require('cors');
 const { default: mongoose } = require('mongoose');
-const PORT = 4000;
-const dbURI= "mongodb+srv://root:B49oShflnZKgLz1H@cluster0.sl8dl.mongodb.net/portfolio_site?retryWrites=true&w=majority";
+const PORT = process.env.PORT;
+const dbURI= process.env.DBURL;
 
 
 mongoose
