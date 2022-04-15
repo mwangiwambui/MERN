@@ -4,20 +4,16 @@ export class Header extends Component {
   render() {
     return (
       <div>
-
-
         <nav class="navbar navbar-expand-lg">
           <div class="container">
 
             <a class="logo" href="#">
-              <img src="img/logo-light.png" alt="logo"/>
+              <img src="/assets/img/logo-light.png" alt="logo"/>
             </a>
 
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
               <span class="icon-bar"><i class="fas fa-bars"></i></span>
             </button>
-
-            <!-- navbar links -->
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
               <ul class="navbar-nav ml-auto">
                 <li class="nav-item">
@@ -42,8 +38,6 @@ export class Header extends Component {
             </div>
           </div>
         </nav>
-
-
         <header class="header valign bg-img position-re" data-scroll-index="0" data-overlay-dark="4" data-background="img/bg.jpg" data-stellar-background-ratio="0.5">
 
           <div class="container">
