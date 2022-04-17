@@ -7,7 +7,7 @@ export class Footer extends Component {
       <footer class="text-center bg-dark position-re">
       <div class="container">
           <a class="logo" href="#">
-              <img src="/assets/img/logo-light.png" alt="logo" />          
+              <img src="assets/img/logo-light.png" alt="logo" />          
           </a>
           
           <div class="social">
