@@ -38,7 +38,7 @@ export class Header extends Component {
             </div>
           </div>
         </nav>
-        <header className="header valign bg-img position-re" data-scroll-index="0" data-overlay-dark="4" data-background="assets/img/bg.jpg" data-stellar-background-ratio="0.5">
+        <header className="header valign bg-img position-re" data-scroll-index="0" data-overlay-dark="2" data-background="assets/img/edited3.png" data-stellar-background-ratio="0.5">
 
           <div className="container">
             <div className="row">
@@ -47,9 +47,9 @@ export class Header extends Component {
                 <h1 className="cd-headline push">
                   <span className="blc">I am</span>
                   <span className="cd-words-wrapper">
-                    <b className="is-visible">Zain Butler</b>
-                    <b>Web Designer</b>
-                    <b>Photography</b>
+                    <b className="is-visible">Wambui</b>
+                    <b>a Developer</b>
+                    <b>a Writer</b>
                   </span>
                 </h1>
 

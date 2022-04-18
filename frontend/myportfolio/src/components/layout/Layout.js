@@ -3,6 +3,7 @@ import React, { Component } from 'react';
 import { Header } from './Header';
 import { Footer } from './Footer';
 
+
 // import Home from '../Home'
 
 // import {
@@ -24,6 +25,7 @@ export class Layout extends Component {
           return (
             <div>
               <Header></Header>
+              {this.props.children}
               <Footer></Footer>
             </div>
           )
