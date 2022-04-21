@@ -17,8 +17,8 @@ const Hero = () => {
                       <h6>Who am i</h6>
                       <h4>Wambui Mwangi.</h4>
                       <h5>Backend Software Engineer</h5>
-                      <p className="mb-10">Nulla metus metus ullamcorper vel tincidunt sed euismod nibh Quisque volutpat condimentum velit className aptent taciti sociosqu ad litora torquent metus metus ullamcorper.</p>
-                      <p className="mb-40">Nulla metus metus ullamcorper vel tincidunt sed euismod nibh Quisque volutpat condimentum velit className aptent taciti sociosqu ad litora torquent metus metus ullamcorper vel tincidunt sed className aptent taciti sociosqu ad litora torquent type setting industry when per conubia nostra.</p>
+                      <p className="mb-10">Hi There!</p>
+                      <p className="mb-40">Join me in my incredible journey as I make beautiful things, try out new technologies, and share my experience collectively by developing with different tools. The web is full of opportunities. Why not explore them!</p>
 
                       <a href="CV.pdf" className="butn butn-bord" target="_blank">
                           <span>Download CV</span>
