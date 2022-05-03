@@ -1,6 +1,48 @@
-import React, {Component} from 'react'
+import React, { useState} from 'react'
 
 const Contact = () => {
+  const [mailerState, setMailerState] = useState({
+    name: "",
+    email: "",
+    message: "",
+    subject: "",
+  })
+  function handleStateChange(e){
+    setMailerState((prevState) => ({
+      ...prevState,
+      [e.target.name]: e.target.value,
+    }))
+  }
+
+  const submitEmail = async (e) => {
+    e.preventDefault();
+    console.log({ mailerState });
+    const response = await fetch ("http://localhost:4000/send", {
+      method: "POST",
+      headers: {
+        "Content-type":"application/json",
+      },
+      body: JSON.stringify({ mailerState }),
+    })
+    .then((res) => res.json())
+    .then(async (res) => {
+      const resData = await res;
+      console.log(resData);
+      if (resData.status === "success"){
+        alert("Message Sent");
+      }else if (resData.status === "fail"){
+        alert("Message failed to send");
+      }
+    })
+    .then(() => {
+      setMailerState({
+        email : "",
+        name: "",
+        subject: "",
+        message: ""
+      })
+    })
+  }
     return(
       <section className="contact section-padding position-re" data-scroll-index="5">
       <div className="container">
@@ -35,7 +77,7 @@ const Contact = () => {
               
               <div className="col-lg-7">
 
-                  <form className="form" id="contact-form" method="post" action="contact.php">
+                  <form className="form" onSubmit={submitEmail}>
 
                       <div className="messages"></div>
 
@@ -45,22 +87,50 @@ const Contact = () => {
 
                               <div className="col-md-6">
                                   <div className="form-group">
-                                      <input id="form_name" type="text" name="name" placeholder="Name" required="required"/>
+                                      <input 
+                                      id="form_name" 
+                                      type="text" 
+                                      name="name" 
+                                      placeholder="Name" 
+                                      required="required"
+                                      onChange={handleStateChange}
+                                      value={mailerState.name}
+                                      />
                                   </div>
                               </div>
                               <div className="col-md-6">
                                   <div className="form-group">
-                                      <input id="form_email" type="email" name="email" placeholder="Email" required="required"/>
+                                      <input 
+                                      id="form_email" 
+                                      type="email" 
+                                      name="email" 
+                                      placeholder="Email" 
+                                      onChange={handleStateChange}
+                                      value={mailerState.email}
+                                      required="required"/>
                                   </div>
                               </div>
                               <div className="col-md-12">
                                   <div className="form-group">
-                                      <input id="form_subject" type="text" name="subject" placeholder="Subject"/>
+                                      <input 
+                                      id="form_subject" 
+                                      type="text" 
+                                      name="subject" 
+                                      onChange={handleStateChange}
+                                      value={mailerState.subject}
+                                      placeholder="Subject"/>
                                   </div>
                               </div>
                               <div className="col-md-12">
                                   <div className="form-group">
-                                      <textarea id="form_message" name="message" placeholder="Message" rows="4" required="required"></textarea>
+                                      <textarea 
+                                      id="form_message" 
+                                      name="message" 
+                                      placeholder="Message" 
+                                      rows="4" 
+                                      onChange={handleStateChange}
+                                      value={mailerState.message}
+                                      required="required"></textarea>
                                   </div>
                               </div>
 
