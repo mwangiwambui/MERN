@@ -1,9 +1,24 @@
-import React, {Component} from 'react'
+import React, { useState, useEffect } from 'react'
+import BlogTitle from './BlogTitle'
 
 const Blog = () => {
   // To handle the svg element
-  const attributeElements={
+  const rss2json = process.env.MEDIUMLINK;
+  const [myBlog, setMyBlog ] = useState([]);
 
+  useEffect(() => {
+    fetch(rss2json)
+    .then(res => res.json())
+    .then(data => {
+      setMyBlog(data)
+      console.log(data)
+    })
+  }, [rss2json]);
+
+  function displayBlogs(){
+    return myBlog.items && myBlog.items.map(blog => {
+      return blog.categories.length > 0 && <BlogTitle key={blog.puDate} blogData={blog} />
+    })
   }
     return (
       <section className="blog section-padding bg-dark position-re" data-scroll-index="4">
@@ -15,24 +30,7 @@ const Blog = () => {
                     </div>
                     <div className="clearfix full-width"></div>
 
-                    <div className="col-lg-4">
-                        <div className="item mb-md50">
-                            <div className="post-img position-re o-hidden">
-                                <img src="assets/img/blog/01.jpg" alt=""/>
-                            </div>
-                            <div className="content">
-                                <span className="data">
-                                    <a href="#0" className="undecro">WordPress</a>
-                                    <a href="#0" className="undecro">March 21 - 2018</a>
-                                </span>
-                                <h5><a href="#0" className="undecro">Your ideal WordPress theme is here.</a></h5>
-
-                                <a href="#0" className="more mt-30">
-                                    <span>Read More</span>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
+                    {displayBlogs()}
 
                     <div className="col-lg-4">
                         <div className="item mb-md50">

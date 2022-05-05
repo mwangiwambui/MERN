@@ -814,6 +814,11 @@ section:hover .section-head h4 {
   color: #c49b66;
 }
 
+.imageContainer{
+  width: 600px;
+  height: 530px;
+}
+
 .posts .post {
   padding: 0 15px;
 }
