@@ -3,7 +3,8 @@ import BlogTitle from './BlogTitle'
 
 const Blog = () => {
   // To handle the svg element
-  const rss2json = process.env.MEDIUMLINK;
+  const rss2json = process.env.REACT_APP_MEDIUMLINK;
+  console.log(rss2json)
   const [myBlog, setMyBlog ] = useState([]);
 
   useEffect(() => {
@@ -32,7 +33,7 @@ const Blog = () => {
 
                     {displayBlogs()}
 
-                    <div className="col-lg-4">
+                    {/* <div className="col-lg-4">
                         <div className="item mb-md50">
                             <div className="post-img position-re o-hidden">
                                 <img src="assets/img/blog/03.jpg" alt=""/>
@@ -68,7 +69,7 @@ const Blog = () => {
                                 </a>
                             </div>
                         </div>
-                    </div>
+                    </div> */}
 
                 </div>
             </div>

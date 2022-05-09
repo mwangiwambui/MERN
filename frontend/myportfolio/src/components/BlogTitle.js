@@ -31,18 +31,38 @@ const BlogTitle = (props) => {
   //   return <a target="_blank" rel="noopener noreferrer" href={`${link}`}/>
 
   // }
+  // return (
+  //   <div className="col-lg-4">
+  //     <div className="item mb-md50">
+  //       <div className="post-img position-re o-hidden">
+  //         <img className="imageContainer" src={`${thumbnail}`} alt="" />
+  //       </div>
+  //       <div className="content">
+  //         <span className="data">
+  //           <a target="_blank" href={`${link}`} className="undecro">{truncateText(cleanTitle(title), 0, 60)}</a>
+  //           <a target="_blank" href={`${link}`} className="undecro">{convertDate(pubDate)}</a>
+  //         </span>
+  //         {/* <h5><a target="_blank" rel="noopener noreferrer" href={`${link}`} className="undecro">{truncateText(toText(content), 0, 100) + "..."}</a></h5> */}
+
+  //         <a target="_blank" rel="noopener noreferrer" href={`${link}`} className="more mt-30">
+  //           <span>Read More</span>
+  //         </a>
+  //       </div>
+  //     </div>
+  //   </div>
+  // )
   return (
     <div className="col-lg-4">
       <div className="item mb-md50">
         <div className="post-img position-re o-hidden">
-          <img className="imageContainer" src={`${thumbnail}`} alt="" />
+          <img className='imageContainer' src={`${thumbnail}`} alt="" />
         </div>
         <div className="content">
           <span className="data">
-            <a target="_blank" rel="noopener noreferrer" href={`${link}`} className="undecro">{truncateText(cleanTitle(title), 0, 60)}</a>
-            <a target="_blank" rel="noopener noreferrer" href={`${link}`} className="undecro">{convertDate(pubDate)}</a>
+            <a target="_blank" href={`${link}`} className="undecro">{truncateText(cleanTitle(title), 0, 60)}</a>
+            <a target="_blank" href={`${link}`} className="undecro">{convertDate(pubDate)}</a>
           </span>
-          <h5><a target="_blank" rel="noopener noreferrer" href={`${link}`} className="undecro">{truncateText(toText(content), 0, 100) + "..."}</a></h5>
+          <h5><a target="_blank" rel="noopener noreferrer" href={`${link}`} className="undecro">{truncateText(cleanTitle(title), 0, 60)}</a></h5>
 
           <a target="_blank" rel="noopener noreferrer" href={`${link}`} className="more mt-30">
             <span>Read More</span>
