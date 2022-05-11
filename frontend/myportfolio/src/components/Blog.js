@@ -30,47 +30,16 @@ const Blog = () => {
                         <h4>Our Blog</h4>
                     </div>
                     <div className="clearfix full-width"></div>
-
-                    {displayBlogs()}
-
-                    {/* <div className="col-lg-4">
-                        <div className="item mb-md50">
-                            <div className="post-img position-re o-hidden">
-                                <img src="assets/img/blog/03.jpg" alt=""/>
-                            </div>
-                            <div className="content">
-                                <span className="data">
-                                    <a href="#0" className="undecro">ThemeForest</a>
-                                    <a href="#0" className="undecro">March 21 - 2018</a>
-                                </span>
-                                <h5><a href="#0" className="undecro">How to improve your business ?</a></h5>
-
-                                <a href="#0" className="more mt-30">
-                                    <span>Read More</span>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div className="col-lg-4">
-                        <div className="item">
-                            <div className="post-img position-re o-hidden">
-                                <img src="assets/img/blog/02.jpg" alt=""/>
-                            </div>
-                            <div className="content">
-                                <span className="data">
-                                    <a href="#0" className="undecro">Lifestyle</a>
-                                    <a href="#0" className="undecro">March 21 - 2018</a>
-                                </span>
-                                <h5><a href="#0" className="undecro">Style workspaces for your inspiration.</a></h5>
-
-                                <a href="#0" className="more mt-30">
-                                    <span>Read More</span>
-                                </a>
-                            </div>
-                        </div>
-                    </div> */}
-
+                <section className='posts section-padding'>
+                  {/* <div className="container"> */}
+                  <div className="row">
+                      {displayBlogs()}
+                  </div>
+                  {/* </div> */}
+                </section>   
+                </div>
+                <div className="offset-lg-5 col-md-12 text-center">
+                        <button type="submit" className="butn butn-bg"><span>Read More</span></button>
                 </div>
             </div>
             

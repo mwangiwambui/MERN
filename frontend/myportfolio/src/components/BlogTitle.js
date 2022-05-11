@@ -25,7 +25,7 @@ const BlogTitle = (props) => {
     let year = dateArray.shift();
     dateArray.push(year)
     console.log(date)
-    return `Published : ${dateArray.join("/")}`
+    return dateArray.join("/")
   }
   // function blogPost(){
   //   return <a target="_blank" rel="noopener noreferrer" href={`${link}`}/>
@@ -52,8 +52,28 @@ const BlogTitle = (props) => {
   //   </div>
   // )
   return (
-    <div className="col-lg-4">
-      <div className="item mb-md50">
+    
+    <div className="col-md-4">
+      <div className="post mb-80">
+                            <div className="post-img">
+                                <div className="img">
+                                    <a target="_blank" href={`${link}`}><img className='imageContainer' src={`${thumbnail}`} alt="" /></a>
+                                </div>
+                                <div className="date">
+                                  <a target="_blank" href={`${link}`}>{convertDate(pubDate)}</a>
+                                </div>
+                            </div>
+                            <div className="post-content">
+                                <h5><a target="_blank" href={`${link}`}>{truncateText(cleanTitle(title), 0, 60)}</a></h5>
+                                <div className="tags">
+                                    <a href="#0">WordPress , </a>
+                                    <a href="#0">Portfolio</a>
+                                </div>
+                                <a href="#0" className="more">Read More</a>
+                            </div>
+                        </div>
+                        {/* --------------------------------------------------------- */}
+      {/* <div className="item mb-md50">
         <div className="post-img position-re o-hidden">
           <img className='imageContainer' src={`${thumbnail}`} alt="" />
         </div>
@@ -68,7 +88,7 @@ const BlogTitle = (props) => {
             <span>Read More</span>
           </a>
         </div>
-      </div>
+      </div> */}
     </div>
   )
 }

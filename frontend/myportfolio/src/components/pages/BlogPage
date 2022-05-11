@@ -1,0 +1,154 @@
+import React from "react";
+
+const BlogPage = () => {
+  return (
+    <div>
+      <header class="header half-header valign bg-img" data-overlay-dark="7" data-background="img/bgx.jpg" data-stellar-background-ratio="0.5">
+
+        <div class="container">
+          <div class="row">
+            <div class="full-width text-center caption mt-50">
+              <h2>Our Blog</h2>
+              <a href="#0">Home</a>/<a href="#0">Blog</a>
+            </div>
+          </div>
+        </div>
+      </header>
+      <section class="posts section-padding">
+        <div class="container">
+          <div class="row">
+
+            <div class="col-md-6">
+              <div class="post mb-80">
+                <div class="post-img">
+                  <div class="img">
+                    <a href="#0"><img src="assets/img/blog/1.jpg" alt="" /></a>
+                  </div>
+                  <div class="date">
+                    <a href="#0">06 Augu, 2018</a>
+                  </div>
+                </div>
+                <div class="post-content">
+                  <h5><a href="#0">How Ubiquity Became a Liability for Burberry.</a></h5>
+                  <div class="tags">
+                    <a href="#0">WordPress , </a>
+                    <a href="#0">Portfolio</a>
+                  </div>
+                  <a href="#0" class="more">Read More</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-6">
+              <div class="post mb-80">
+                <div class="post-img">
+                  <div class="img">
+                    <a href="#0"><img src="assets/img/blog/2.jpg" alt="" /></a>
+                  </div>
+                  <div class="date">
+                    <a href="#0">06 Augu, 2018</a>
+                  </div>
+                </div>
+                <div class="post-content">
+                  <h5><a href="#0">How Ubiquity Became a Liability for Burberry.</a></h5>
+                  <div class="tags">
+                    <a href="#0">WordPress , </a>
+                    <a href="#0">Portfolio</a>
+                  </div>
+                  <a href="#0" class="more">Read More</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-6">
+              <div class="post mb-80">
+                <div class="post-img">
+                  <div class="img">
+                    <a href="#0"><img src="img/blog/3.jpg" alt=""></a>
+                  </div>
+                  <div class="date">
+                    <a href="#0">06 Augu, 2018</a>
+                  </div>
+                </div>
+                <div class="post-content">
+                  <h5><a href="#0">How Ubiquity Became a Liability for Burberry.</a></h5>
+                  <div class="tags">
+                    <a href="#0">WordPress , </a>
+                    <a href="#0">Portfolio</a>
+                  </div>
+                  <a href="#0" class="more">Read More</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-6">
+              <div class="post mb-80">
+                <div class="post-img">
+                  <div class="img">
+                    <a href="#0"><img src="assets/img/blog/4.jpg" alt="" /></a>
+                  </div>
+                  <div class="date">
+                    <a href="#0">06 Augu, 2018</a>
+                  </div>
+                </div>
+                <div class="post-content">
+                  <h5><a href="#0">How Ubiquity Became a Liability for Burberry.</a></h5>
+                  <div class="tags">
+                    <a href="#0">WordPress , </a>
+                    <a href="#0">Portfolio</a>
+                  </div>
+                  <a href="#0" class="more">Read More</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-6">
+              <div class="post mb-sm80">
+                <div class="post-img">
+                  <div class="img">
+                    <a href="#0"><img src="assets/img/blog/5.jpg" alt="" /></a>
+                  </div>
+                  <div class="date">
+                    <a href="#0">06 Augu, 2018</a>
+                  </div>
+                </div>
+                <div class="post-content">
+                  <h5><a href="#0">How Ubiquity Became a Liability for Burberry.</a></h5>
+                  <div class="tags">
+                    <a href="#0">WordPress , </a>
+                    <a href="#0">Portfolio</a>
+                  </div>
+                  <a href="#0" class="more">Read More</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-6">
+              <div class="post">
+                <div class="post-img">
+                  <div class="img">
+                    <a href="#0"><img src="assets/img/blog/6.jpg" alt="" /></a>
+                  </div>
+                  <div class="date">
+                    <a href="#0">06 Augu, 2018</a>
+                  </div>
+                </div>
+                <div class="post-content">
+                  <h5><a href="#0">How Ubiquity Became a Liability for Burberry.</a></h5>
+                  <div class="tags">
+                    <a href="#0">WordPress , </a>
+                    <a href="#0">Portfolio</a>
+                  </div>
+                  <a href="#0" class="more">Read More</a>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </section>
+    </div>
+  )
+}
+
+export default BlogPage;

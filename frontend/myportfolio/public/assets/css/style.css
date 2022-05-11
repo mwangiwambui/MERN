@@ -755,7 +755,7 @@ section:hover .section-head h4 {
 }
 .blog .item img {
   filter: blur(2px);
-  -webkit-filter: blur(5px);
+  -webkit-filter: blur(2px);
   -webkit-transition: all .5s;
   transition: all .5s;
 }
@@ -813,6 +813,7 @@ section:hover .section-head h4 {
 .half-header .caption a:hover {
   color: #c49b66;
 }
+
 .posts .post {
   padding: 0 15px;
 }
@@ -822,19 +823,13 @@ section:hover .section-head h4 {
 }
 .posts .post-img {
   position: relative;
-  height: 130px;
-  margin-bottom: 5px;
-  position: relative;
 }
 .posts .post-img .img {
   overflow: hidden;
 }
 .posts .post-img img {
-  -webkit-transition: all .3s;
-  transition: all .3s;
-  width: 100%;
-  margin: 1px;
-  
+  -webkit-transition: all .7s;
+  transition: all .7s;
 }
 .posts .post-img .date {
   position: absolute;
@@ -996,11 +991,6 @@ section:hover .section-head h4 {
 .posts-blog .info .right {
   float: right;
 }
-
-.imageContainer{
-  width: 300px;
-  height: 309px;
-}
 .posts-blog .title {
   font-size: 14px;
   padding-bottom: 10px;
@@ -1063,6 +1053,11 @@ section:hover .section-head h4 {
   max-height: 140px;
   max-width: 100%;
   margin-bottom: 10px;
+}
+
+.imageContainer{
+  width: 300px;
+  height: 309px;
 }
 .posts-blog form .butn {
   margin: 30px 0 0 0;

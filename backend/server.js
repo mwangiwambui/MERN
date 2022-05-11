@@ -9,6 +9,10 @@ const { default: mongoose } = require('mongoose');
 const PORT = process.env.PORT;
 const dbURI= process.env.DBURL;
 
+//middleware
+app.use(express.json());
+app.use(cors())
+
 let transporter = nodemailer.createTransport({
   service: "gmail",
   auth: {
@@ -26,6 +30,36 @@ transporter.verify((err, success) => {
   ? console.log(err)
   : console.log(`=== Server is ready to take messages : ${success}`)
 })
+
+let mailOptions = {
+  from: "test@gmail.com",
+  to: process.env.EMAIL,
+  subject: "Nodemailer API",
+  text: "Hi from your nodemailer API",
+}
+
+app.post("/send", function (req, res){
+  let mailOptions = {
+    from: `${req.body.mailerState.email}`,
+    to: process.env.EMAIL,
+    subject: `${req.body.mailerState.subject}`,
+    text: `${req.body.mailerState.message}`,
+  };
+
+  transporter.sendMail(mailOptions, function (err, data){
+    if (err){
+      res.json({
+        status: "fail",
+      })
+    }else{
+      console.log("== Message Sent ==");
+      res.json({ status : "success"})
+    }
+  });
+
+});
+
+
 mongoose
   .connect(dbURI, { useNewUrlParser : true, useUnifiedTopology : true})
   .then(() => {
