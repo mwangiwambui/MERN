@@ -12,33 +12,35 @@ const Services = () => {
 
             <div className="col-lg-3 col-md-6">
               <div className="item mb-md50">
-                <i className="icon icofont icofont-paint"></i>
-                <h6>Web Design</h6>
-                <p>Nulla metus metus ullamcorper vel tincidunt sed euismod nibh Quisque volutpat</p>
+                <i className="icon icofont icofont-code-alt"></i>
+                <h6>Fullstack Development</h6>
+                <p>Development of APIs and microservices using NodeJs, Python, PHP.</p>
               </div>
             </div>
 
             <div className="col-lg-3 col-md-6">
               <div className="item mb-md50">
-                <i className="icon icofont icofont-ui-fire-wall"></i>
-                <h6>Development</h6>
-                <p>Nulla metus metus ullamcorper vel tincidunt sed euismod nibh Quisque volutpat</p>
+                <i className="icon icofont icofont-edit"></i>
+                <h6>Technical Writing</h6>
+                <p>Publishing and documenting software, code and APIs.</p>
               </div>
             </div>
 
+            
+
             <div className="col-lg-3 col-md-6">
               <div className="item mb-sm50">
-                <i className="icon icofont icofont-instrument"></i>
-                <h6>Branding</h6>
-                <p>Nulla metus metus ullamcorper vel tincidunt sed euismod nibh Quisque volutpat</p>
+                <i className="icon icofont icofont-database"></i>
+                <h6>Database Administration</h6>
+                <p>Perfoming various data operations using SQL and NoSQL databases</p>
               </div>
             </div>
 
             <div className="col-lg-3 col-md-6">
               <div className="item">
-                <i className="icon icofont icofont-chart-histogram-alt"></i>
-                <h6>Marketing</h6>
-                <p>Nulla metus metus ullamcorper vel tincidunt sed euismod nibh Quisque volutpat</p>
+                <i className="icon icofont icofont-server"></i>
+                <h6>DevOps</h6>
+                <p>Service Reliability Engineering using tools such as ansible, python scripts and bash</p>
               </div>
             </div>
 
