@@ -14,8 +14,8 @@ const Portfolio = () => {
             <div className="filtering text-center col-sm-12">
               <span data-filter='*' className="active">All</span>
               <span data-filter='.brand'>Brand</span>
-              <span data-filter='.web'>Design</span>
-              <span data-filter='.graphic'>Graphic</span>
+              <span data-filter='.web'>Web</span>
+              <span data-filter='.code'>Code</span>
             </div>
 
             <div className="clearfix"></div>
@@ -24,15 +24,15 @@ const Portfolio = () => {
             <div className="gallery text-center full-width">
 
               {/* <!-- gallery item --> */}
-              <div className="items graphic">
+              <div className="items code">
                 <div className="item-img">
-                  <img src="assets/img/portfolio/1.jpg" alt="image" />
+                  <img src="assets/img/portfolio/spotify.png" alt="spotify" />
                     <div className="item-img-overlay valign">
                       <div className="overlay-info full-width vertical-center">
-                        <h6>Crearive Design</h6>
-                        <p>Work description here</p>
+                        <h6>YouTube2Spotify</h6>
+                        <p>Worked on a python script that adds all the liked songs on youtube to spotify.</p>
                       </div>
-                      <a href="assets/img/portfolio/1.jpg" className="popimg">
+                      <a href="https://github.com/mwangiwambui/MPESA_PUSH" target="_blank" className="popimg">
                         <i className="icofont icofont-image"></i>
                       </a>
                     </div>
@@ -42,13 +42,13 @@ const Portfolio = () => {
               {/* <!-- gallery item --> */}
               <div className="items web">
                 <div className="item-img">
-                  <img src="assets/img/portfolio/2.jpg" alt="image" />
+                  <img src="assets/img/portfolio/todoapp.png" alt="todoapp" />
                     <div className="item-img-overlay valign">
                       <div className="overlay-info full-width vertical-center">
-                        <h6>Crearive Design</h6>
-                        <p>Work description here</p>
+                        <h6>TODOAPP</h6>
+                        <p>A react todoapp that introduced me to react js, react hooks and react router.</p>
                       </div>
-                      <a href="assets/img/portfolio/2.jpg" className="popimg">
+                      <a href="https://mwangiwambui.github.io/todoapp/" target="_blank" className="todoapp">
                         <i className="icofont icofont-image"></i>
                       </a>
                     </div>
@@ -56,15 +56,15 @@ const Portfolio = () => {
               </div>
 
               {/* <!-- gallery item --> */}
-              <div className="items width2 graphic">
+              <div className="items width2 code">
                 <div className="item-img">
-                  <img src="assets/img/portfolio/3.jpg" alt="image" />
+                  <img src="assets/img/portfolio/push.png" alt="image" />
                     <div className="item-img-overlay valign">
                       <div className="overlay-info full-width vertical-center">
-                        <h6>Crearive Design</h6>
-                        <p>Work description here</p>
+                        <h6>MPESA_PUSH</h6>
+                        <p>A small php project that enables a user to push an M-PESA stk push using the M-PESA APIs.</p>
                       </div>
-                      <a href="assets/img/portfolio/3.jpg" className="popimg">
+                      <a href="https://github.com/mwangiwambui/MPESA_PUSH" target="_blank" className="popimg">
                         <i className="icofont icofont-image"></i>
                       </a>
                     </div>
@@ -72,15 +72,16 @@ const Portfolio = () => {
               </div>
 
               {/* <!-- gallery item --> */}
-              <div className="items width2 brand">
+              <div className="items width2 code">
                 <div className="item-img">
-                  <img src="assets/img/portfolio/4.jpg" alt="image"/>
+                  <img src="assets/img/portfolio/model.png" alt="image"/>
                     <div className="item-img-overlay valign">
                       <div className="overlay-info full-width vertical-center">
-                        <h6>Crearive Design</h6>
-                        <p>Work description here</p>
+                        <h6>PAYLOANS</h6>
+                        <p>A machine learning project that calculates the risk score of a lender targeting micro-finance
+                        institutions such as saccos.</p>
                       </div>
-                      <a href="assets/mg/portfolio/4.jpg" className="popimg">
+                      <a href="https://github.com/mwangiwambui/payloans_v2" target="_blank" className="popimg">
                         <i className="icofont icofont-image"></i>
                       </a>
                     </div>
