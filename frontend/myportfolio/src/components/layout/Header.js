@@ -56,11 +56,11 @@ const Header = () => {
               <li className="nav-item">
                 <a className="nav-link" href="#" data-scroll-nav="3">Portfolio</a>
               </li>
-              <li className="nav-item">
+              {/* <li className="nav-item">
                 <a className="nav-link" href="#" data-scroll-nav="4">Blog</a>
-              </li>
+              </li> */}
               <li className="nav-item">
-                <a className="nav-link" href="#" data-scroll-nav="5">Contact</a>
+                <a className="nav-link" href="#" data-scroll-nav="4">Contact</a>
               </li>
             </ul>
           </div>

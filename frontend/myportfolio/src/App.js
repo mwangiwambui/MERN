@@ -20,7 +20,7 @@ function App() {
       <Hero />
       <Services />
       <Portfolio />
-      <Blog />
+      {/* <Blog /> */}
       <Contact />
     </div>
   );
