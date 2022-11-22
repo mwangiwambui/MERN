@@ -82,11 +82,10 @@ const Header = () => {
               </h1>
 
               <div className="social mt-30">
-                <a href="#0"><i className="icofont icofont-social-facebook"></i></a>
-                <a href="#0"><i className="icofont icofont-social-twitter"></i></a>
-                <a href="#0"><i className="icofont icofont-social-instagram"></i></a>
-                <a href="#0"><i className="icofont icofont-brand-linkedin"></i></a>
-                <a href="#0"><i className="icofont icofont-social-behance"></i></a>
+                <a href="https://github.com/mwangiwambui"><i className="icofont icofont-social-github"></i></a>
+                <a href="https://twitter.com/yomzziee"><i className="icofont icofont-social-twitter"></i></a>
+                <a href="https://www.instagram.com/yomziiee/"><i className="icofont icofont-social-instagram"></i></a>
+                <a href="https://www.linkedin.com/in/naomi-mwangi-wambui/"><i className="icofont icofont-brand-linkedin"></i></a>
               </div>
 
             </div>
