@@ -35,7 +35,7 @@ const Header = () => {
         <div className="container">
 
           <a className="logo" href="#">
-            <img src="assets/img/logo-light.png" alt="logo" />
+            {/* <img src="assets/img/logo-light.png" alt="logo" /> */}
           </a>
 
           <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">

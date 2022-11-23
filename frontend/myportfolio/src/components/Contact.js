@@ -56,20 +56,14 @@ const Contact = () => {
                   <div className="info bg-img mb-md50" data-background="assets/img/map.png">
                       <div className="item">
                           <div className="cont">
-                              <h6>Phone : </h6>
-                              <p>+20 010 2517 8918</p>
-                          </div>
-                      </div>
-                      <div className="item">
-                          <div className="cont">
-                              <h6>Address : </h6>
-                              <p>3rd Avenue, Upper East Side,<br/> San Francisco</p>
+                              <h6>Location : </h6>
+                              <p>Nairobi, <br/> Kenya</p>
                           </div>
                       </div>
                       <div className="item">
                           <div className="cont">
                               <h6>Email : </h6>
-                              <p>email_support@youradress.com</p>
+                              <p>wambu54mwangi@gmail.com</p>
                           </div>
                       </div>
                   </div>
