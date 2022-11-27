@@ -20,7 +20,7 @@ const Hero = () => {
                       <p className="mb-10">Hi There!</p>
                       <p className="mb-40">Join me in my incredible journey as I make beautiful things, try out new technologies, and share my experience collectively by developing with different tools. The web is full of opportunities. Why not explore them!</p>
 
-                      <a href="Naomi_Mwangi_CV.pdf" className="butn butn-bord" target="_blank">
+                      <a href="Naomi%20Mwangi%20-%20System's%20Engineer.pdf" className="butn butn-bord" target="_blank">
                           <span>Download CV</span>
                       </a>
                       <a href="#0" className="butn butn-light" data-scroll-nav="5">
