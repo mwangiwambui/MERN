@@ -6,7 +6,7 @@ export class Footer extends Component {
       <footer className="text-center position-re">
       <div className="container">
           <a className="logo" href="#">
-              <img src="assets/img/logo-light.png" alt="logo" />          
+              <img src="assets/img/nice.png" alt="logo" />          
           </a>
           
           <div className="social">
