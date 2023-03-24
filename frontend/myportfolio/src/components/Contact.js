@@ -49,7 +49,7 @@ const Contact = () => {
           <div className="row">
 
               <div className="section-head text-center col-lg-8 offset-lg-2 col-md-10 offset-md-1">
-                  <h4>Contact Us</h4>
+                  <h4>Contact Me</h4>
               </div>
 
               <div className="col-lg-5">
